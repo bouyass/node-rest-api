@@ -11,3 +11,8 @@ db.on('open', ()=> console.log("Connected to database"))
 app.listen(8888, () => {
     console.log("server running on port 8888")
 }) 
+
+app.use(express.json())
+
+const subscribersRouter = require('./routes/subscriber')
+app.use('/subscribers',subscribersRouter) 

@@ -1,0 +1,30 @@
+GET http://localhost:8888/subscribers
+
+###
+
+POST http://localhost:8888/subscribers
+
+Content-Type: application/json
+
+{
+    "name": "lyes",
+    "subscribedToChannel": "Web Dev simplified"
+}
+
+###
+
+GET http://localhost:8888/subscribers/5fdcb4727d340557c42ce4f1
+
+
+###
+
+DELETE  http://localhost:8888/subscribers/5fdcb4727d340557c42ce4f1
+
+###
+
+PATCH  http://localhost:8888/subscribers/5fdcb5738e9e8c4fb4db21cc
+Content-Type: application/json
+
+{
+    "name": "Karim"
+}
